@@ -5,6 +5,12 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <title>Home</title>
     <style>
+
+        body{
+            background-color: #ADB4B9;
+            margin: 0;
+            padding: 0;
+        }
         .jumbotron {
             background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.unsplash.com/photo-1579532537902-1e50099867b4?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1950&q=80");
             height: 100vh;
@@ -19,6 +25,8 @@
             color: #FDD835 ;
             opacity: 60%;
             font-family: Courier New, sans-serif;
+            text-shadow: 5px 5px #AC4A4A;
+
 
         }
 
@@ -32,6 +40,101 @@
             color: #FDD835 !important; ;
             opacity: 60%;
         }
+
+        .grid-container {
+            display: grid;
+            grid-row-gap: 50px;
+            grid-template-columns: auto auto auto;
+            padding-left: 100px;
+            padding-right: 100px;
+            margin-top: 130px;
+            grid-column-gap: 20px;
+            font-family: Courier New, sans-serif;
+            color: #111224;
+        }
+        .grid-item1{
+            padding-left: 40px;
+        }
+
+        .title1 {
+            color: #8A97A1;
+            font-family: Courier New, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            text-shadow: 5px 5px black;
+
+
+
+        }
+
+        .grid-container2 {
+            display: grid;
+            grid-row-gap: 50px;
+            grid-template-columns: auto auto auto;
+            padding-left: 100px;
+            padding-right: 100px;
+            margin-top: 200px;
+            grid-column-gap: 20px;
+            font-family: Courier New, sans-serif;
+            color: #111224;
+            padding-bottom: 100px;
+
+        }
+        .grid-item2{
+            padding-left: 40px;
+
+
+        }
+        img{
+            border-radius: 130px;
+
+        }
+
+        .box{
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            width: 40px;
+            height: 40px;
+            transform: translateY(-80px) translateX(-50%) rotate(45deg);
+
+        }
+
+        .box span{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-bottom: 2px solid black;
+            border-right: 2px solid black;
+            animation: animate 1.5s linear infinite;
+        }
+
+        .box span:nth-child(1){
+            transform: translate(-15px,-15px);
+        }
+
+        
+        @keyframes animate {
+            0%{
+                top: -5px;
+                left: -5px;
+                opacity: 0;
+            }
+            25%{
+                top: -5px;
+                left: -5px;
+                opacity: 0;
+
+            }
+            
+        }
+
+
+
+
 
 
 
@@ -87,10 +190,54 @@
 
 <div class="jumbotron">
     <div class="main heading">
-        <h1>ONLINE MARKETING and DATA PRIVACY</h1>
+        <h1>ONLINE MARKETING & DATA PRIVACY</h1>
     </div>
 
 </div>
+
+<div class="box">
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+
+<div class="title1">
+    <h1>ABOUT US</h1>
+</div>
+
+<div class="grid-container">
+    <div class="grid-item">
+        <div class="footer-img">
+            <img src="https://lh3.googleusercontent.com/pw/ACtC-3eUYRmSo92iLCJZFoyUQJPg8FxAv-I9WfwsQXEHbz8hl0KE2mQ09UmvfHt7S_ZbMAJrsq1wBky0Stoc8-WKxFir_655Q5VGN45A0UCkMkM_4AaEcCToj3rBKLt03h95wG5z651G1do5MgFj8vA12cV9=w1256-h1674-no?authuser=0" alt="" width="300" height="300">
+        </div>
+    </div>
+    <div class="grid-item1">
+        <div class="text1">
+            <h1>My name is Abhishek Ranpura. I am currently a junior at NJIT, and I am pursuing a Business and Information Systems Degree.
+                I am very interested in the uses of web applications and my hobbies include photography, video-gaming, learning new things, and listening to music.</h1>
+        </div>
+    </div>
+</div>
+
+<div class="grid-container2">
+    <div class="grid-item3">
+        <div class="text1">
+            <h1>Hi! My name is Ilayda Turkmen and I’m currently a freshman in Human Computer Interaction major at NJIT. I am very interested in art and design. I am highly motivated for these upcoming years as a college student.</h1>
+        </div>
+    </div>
+    <div class="grid-item2">
+        <div class="footer-img">
+            <img src="https://lh3.googleusercontent.com/sNaHPRB0VkTAZ8IVDFAx3SER0Bk0pc28VBEi1-zFU92LdN9T_BXYl0nUPAoTFIBPrwED2NBoXzL8xolsTjcqccnCFXSJohgwOSkq6bYhli0zvvhlbEBTqLiBdkvxXrLQAE75vXB-9hM5q5VGr-zd7y19BClkQAz7GHgUYgiRSOSw4NmGQGZR0ZGkmTwbrmXuQ2WcadaT2hZQW8TaANZb_GmX-cjRyepER8BMJvU7NCIOfhubSLsI9GIlmx_GhNvGHyLwtRZB5ewHW1FGcDHHoTbxTVx9zOrTPPBzTvSc20pmjCPPCd1EFhkwTFiCcNs_5Fgf41CE99-p-ym3JyioAaZYtLY4u0kw1LAUV_D3-UNfi8vfCZLifGivasl7gQMream-tBxO_7wIkhCN4wh2V4h5G-v6NBS3mqo-GWl-rdD6i5OEWC8tMP3Csy38-axl0E6YjHp1e4FxEs5vKclLlc2rBeu5QhqDmAhleCSEbcEPr-nl3tGVxK7TGbjkMaN7Q-k8VCop0p4OofoZ55s79Zx3vMqdOaUzBai8G3FkrdSQzYMtIEUz-RO2RcNPVu6u_K_0LgkydU1V0fiC2Vj6R5WLowcadAZBjeaQW_SoErdpXolMy6YWOO-tuNsFJAse0U14YUeq-WxHZ1umq6L5kQLiuomepBf77sOMPP-wp9FXj3oaOCYGTiIi7xB7mpI=w1538-h1674-no?authuser=0" alt="" width="300" height="300">
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+
 
 
 

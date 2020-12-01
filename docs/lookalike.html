@@ -6,9 +6,185 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../css/bootstrap.css">
-    <title>Look Alike Analysis</title>
+    <title>Look Alike Modeling</title>
+    <style>
+        .navbar {
+            background-color: #424A5D !important;
+            font-family: Courier New, sans-serif;
+            color: #111224;
+        }
+        body{
+            background-color: #ADB4B9;
+        }
+        p,li{
+            font-family: Courier New, sans-serif;
+            color: #111224;
+            font-weight: bold;
+        }
+        .jumbotron {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://cdn.hipwallpaper.com/i/10/72/wK8XUM.png");
+            height: 55vh;
+            background-position: 80% 50%;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .heading1{
+            text-align: center;
+            color: #111224;
+            font-family: Courier New, sans-serif;
+            margin-left: 100px;
+            margin-right: 100px;
+        }
+        .container-fluid-one .col-6{
+            text-align: left;
+            color: #424A5D;
+            font-size: 30px;
+            font-family: Courier New, sans-serif;
+        }
+        #bruh{
+            text-align: left;
+            color: #424A5D;
+            font-size: 30px;
+            font-family: Courier New, sans-serif;
+        }
+        .container-fluid-one{
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+        .footer{
+            background: #424A5D;
+            margin-top: 20px;
+        }
+        .footer-content{
+            font-family: Courier New, sans-serif;
+            color: #111224;
+            text-align: center;
+            padding-bottom: 20px;
+            padding-top: 10px;
+        }
+    </style>
 </head>
 <body>
+
+
+<!-- Adding Navbar -->
+<div class="container-fluid">
+    <div class ="row no-gutters">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="home.html">Home <span class="sr-only"></span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Online Marketing                   </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="browserfing.html">Browser Fingerprinting</a>
+                            <a class="dropdown-item" href="trackedonline.html">Tracked Online</a>
+                            <a class="dropdown-item" href="fbdilemmaone.html">Facebook Dilemma 1</a>
+                            <a class="dropdown-item" href="fbdilemmatwo.html">Facebook Dilemma 2</a>
+                            <a class="dropdown-item" href="lookalike.html">Look Alike Analysis</a>
+                            <a class="dropdown-item" href="legalaspects.html">Legal Aspects of Online Privacy</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLinkk" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Data Privacy                    </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="becominganon.html">Becoming Anonymous</a>
+                            <a class="dropdown-item" href="ussecretsone.html">Surveillance Capitalism</a>
+                            <a class="dropdown-item" href="ussecretstwo.html">U.S. of Secrets 1 </a>
+                            <a class="dropdown-item" href="survcap.html">U.S. of Secrets 2</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</div>
+
+
+<!--Adding Jumbotron -->
+<div class="jumbotron">
+</div>
+<div class="heading1">
+    <h1>
+        Look Alike Analysis
+    </h1>
+    <h3>
+        <i>Learn more about the advertiser's perspective!</i>
+    </h3>
+</div>
+
+
+<!--Rows to hold content-->
+<div class="container-fluid-one">
+    <div class="row no-gutters">
+        <div class="row">
+            <div class="col-6" style="text-align: left">
+                <u><b>How Advertisers Find Ideal Customers</b></u>
+            </div>
+            <div class="col">
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-7">
+                <p>It is now common knowledge that advertisers have many methods to collect user data, but here's how they identify their "super-users". Super-users are individuals that are likely to buy a significant amount of offered products and services.</p>
+
+                <p>This step-by-step process of finding super-users is called "Look Alike Modelling".</p>
+
+                <ol>
+                    <li>The user base is first split into superusers and normal users</li>
+                    <li>Advertisers would then send a list of the superusers’ device identifiers (obtained through browser fingerprinting) and send a list of the normal users’ device identifiers to a data scientist.</li>
+                    <li>This list of device identifiers is then analyzed to understand the characteristics of superusers as compared to other users.</li>
+                    <li>To distinguish between the two lists of data on different users, a data scientist would build a “feature vector”. A feature vector in this scenario, is a vector of numerical values that represent certain features that one list of users would have versus the other list. Features that feature vectors would contain could be time zones, devices, and even age.</li>
+                    <li>These feature vectors are then used to make new sets of data that differentiate between the features of super users and normal users.</li>
+                    <li>Feature vectors then take individual users that are configured to optimize the superuser are then put into a new data set.</li>
+                    <li>This new, expanded data set’s users are compared to the feature vectors to make and implement even more efficient feature vectors.</li>
+                </ol>
+
+            </div>
+            <div class="col-5">
+                <img src="https://d1e00ek4ebabms.cloudfront.net/production/ac8f003b-1207-4074-a6d8-b45afff7c704.jpg" alt="Data Security" class="center" style="width: 80%; height: 70%">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6" style="text-align: left">
+                <u><b>What Happens Next?</b></u>
+            </div>
+            <div class="col">
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-7">
+
+                <p>The expanded data set contains only superusers. This data set is then given to an advertiser can run their advertisement campaigns on. Many advertising firms are paid by other companies to increase the amount of sales they make and the traffic on their websites and mobile applications. Look Alike Modelling is the perfect tool that helps advertising firms achieve this task.</p>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Adding a Footer -->
+<div class="footer">
+    <div class="footer-content">
+        <h2>Turkmen & Ranpura</h2>
+    </div>
+</div>
+
 
 <!-- JQuery, Popper.js, Bootstrap JS (Keep this at the end of the body)-->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
